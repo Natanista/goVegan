@@ -14,18 +14,19 @@ body{
 
 /*Header*/
 .header{
-    height: 80px;
+    height: 130px;
 }
 
 .logo h3{
   font-size: 40px;
   float: left;
-  padding: 50px 0 0 30px;
+  padding: 45px 0 0 30px;
   text-decoration: none;
 }
 
 .logo a{
     text-decoration: none;
+    color: black;
 }
 
 .logo img{
@@ -38,7 +39,7 @@ body{
 .nav{
     float: right;
     display: inline-block;
-    font-size: 28px;
+    font-size: 20px;
     padding: 30px;
     margin-right:30px ;
 }
@@ -50,17 +51,103 @@ body{
 }
 
 .nav img{
-    width: 50px;
-    padding-to
+    width: 40px;
+    
 }
 
 .nav a{
     text-decoration: none;
     color: black;
     display: inline-block;
-    
+}
 
+.nav a:hover{
+    border-bottom:1px solid#37ADFF;
 }
 /*Fim Header*/
 
+/*Inicio SHOWIMG*/
+.showimg img{
+    max-height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*fim SHOWIMG*/
 
+/*Inicio Informativo*/
+.informativo{
+    text-align: center;
+    width: 1000px;
+    margin-left: 400px;
+    padding-top:50px;
+}
+
+.informativo p{
+    font-size:25px;
+    padding: 25px 0 50px 0;
+
+}
+
+.informativo h3{
+    font-size: 40px;
+    border-bottom:1px solid #37ADFF;
+    padding-bottom: 25px;
+}
+/*FIm informativo*/
+
+/*Inicio Recomendacoes*/
+.recomendacoes{
+    background-color:  #FFF;
+    padding-top: 50px;
+}
+
+.recomendacoes h3{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+}
+
+.box img{
+    width: 250px;
+}
+
+.box{
+    display: inline-block;
+    padding: 50px;
+    text-align: center;
+    margin: 50px;
+}
+
+.box p{
+    padding-top: 10px;
+}
+
+.box a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.box a:hover{
+    color: #37ADFF;
+}
+
+/*Fim recomendacoes*/
+
+/*INICIO FOOTER*/
+.footer{
+    background-color: #1F1F1F;
+    height: 80px;
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#heart{
+    color: red;
+}
+/*FIM FOOTER*/
