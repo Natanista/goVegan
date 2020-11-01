@@ -94,7 +94,14 @@ body{
     border-bottom:1px solid #37ADFF;
     padding-bottom: 25px;
 }
-/*FIm informativo*/
+/*Fim informativo*/
+
+/*Inicio Formulario*/
+.form{
+    background-color:#1F1F1F;
+    height: 800px;
+}
+/*Fim Formulario*/
 
 /*Inicio Recomendacoes*/
 .recomendacoes{
