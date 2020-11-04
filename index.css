@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-/*Globais*/
+/*Inicio Global*/
 *{
     margin:0;
     padding: 0;
@@ -9,152 +9,73 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+/*Fim Global*/
 
-/*Fim globais*/
 
-/*Header*/
-.header{
-    height: 130px;
-}
-
-.logo h3{
-  font-size: 40px;
-  float: left;
-  padding: 45px 0 0 30px;
-  text-decoration: none;
-}
-
-.logo a{
-    text-decoration: none;
-    color: black;
-}
-
-.logo img{
-    width: 80px;
-    float: left;
-    padding: 30px 0 0 20px;
-    
-}
-
-.nav{
-    float: right;
-    display: inline-block;
-    font-size: 20px;
-    padding: 30px;
-    margin-right:30px ;
-}
-
-.nav li{
-    list-style: none;
-    display: inline-block;
-    margin:0 35px;
-}
-
-.nav img{
-    width: 40px;
-    
-}
-
-.nav a{
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-}
-
-.nav a:hover{
-    border-bottom:1px solid#37ADFF;
-}
-/*Fim Header*/
-
-/*Inicio SHOWIMG*/
-.showimg img{
-    max-height: 700px;
-    width: 100%;
-    background-repeat: no-repeat;
+/*Inicio Header*/
+header{
+    background-image: url(img/wpp_oficiall.png);
     background-size: cover;
-}
-/*fim SHOWIMG*/
-
-/*Inicio Informativo*/
-.informativo{
-    text-align: center;
-    width: 1000px;
-    margin-left: 400px;
-    padding-top:50px;
-}
-
-.informativo p{
-    font-size:25px;
-    padding: 25px 0 50px 0;
-
-}
-
-.informativo h3{
-    font-size: 40px;
-    border-bottom:1px solid #37ADFF;
-    padding-bottom: 25px;
-}
-/*Fim informativo*/
-
-/*Inicio Formulario*/
-.form{
-    background-color:#1F1F1F;
     height: 800px;
 }
-/*Fim Formulario*/
 
-/*Inicio Recomendacoes*/
-.recomendacoes{
-    background-color:  #FFF;
-    padding-top: 50px;
-}
-
-.recomendacoes h3{
-    color: black;
-    font-size: 50px;
-    text-align: center;
-}
-
-.box img{
-    width: 250px;
-}
-
-.box{
-    display: inline-block;
-    padding: 50px;
-    text-align: center;
-    margin: 50px;
-}
-
-.box p{
-    padding-top: 10px;
-}
-
-.box a{
-    text-decoration: none;
-    color: black;
+header h3{
     font-size: 30px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 200px;
+    
 }
 
-.box a:hover{
-    color: #37ADFF;
-}
-
-/*Fim recomendacoes*/
-
-/*INICIO FOOTER*/
-.footer{
-    background-color: #1F1F1F;
-    height: 80px;
-}
-
-.footer p{
+header a{
+    text-decoration: none;
     color: white;
-    text-align: center;
-    padding-top: 20px;
 }
 
-#heart{
-    color: red;
+header img{
+    width:60px;
+    float: left;
+  
 }
-/*FIM FOOTER*/
+
+.imgm{
+    margin-top: 30px;
+}
+
+header li{
+    display: inline-block;
+}
+
+/*Inicio Nav*/
+.nav1{
+    float:right ;
+    margin-top: 40px;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.nav1 input{
+    background-color:#FFC709;
+    color: black;
+    padding: 10px ;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    font-size:20px;
+}
+
+.nav1 input:hover{
+    background-color: #FFDB66;
+}
+
+.nav1 li{
+    padding-right: 20px;
+}
+
+.nav1 a:hover{
+    border-bottom: 1px solid #FFC709;
+}
+/*Fim Nav*/
+
+/*Fim Header*/
+
