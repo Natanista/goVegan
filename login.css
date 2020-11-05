@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+/*Inicio Global*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/*font-family: 'Roboto Slab', serif;*/
+/*Fim Global*/
+/*Inicio Header*/
+header {
+    background-color: #1B1B1B;
+    height: 80px;
+}
+
+header h3 {
+    font-size: 20px;
+    float: left;
+    margin-top:40px;
+    margin-left: 400px;
+
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header img {
+    width: 40px;
+    float: left;
+    
+    
+
+}
+
+.imgm {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+/*Fim Nav*/
+/*Fim Header*/
