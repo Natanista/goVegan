@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+/*Inicio Global*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/*font-family: 'Roboto Slab', serif;*/
+/*Fim Global*/
+/*Inicio Header*/
+header {
+    background-color: #1B1B1B;
+    height: 70px;
+}
+
+header h3 {
+    font-size: 20px;
+    float: left;
+    margin-top:30px;
+    margin-left: 400px;
+
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header img {
+    width: 40px;
+    float: left;
+    
+    
+
+}
+
+.title a{
+    text-decoration: none;
+    color:#FFC709 ;
+}
+
+.imgm {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+/*Fim Header*/
+
+/*Inicio Form*/
+.container2 {
+    padding:100px;
+}
+
+.importante{
+    width: 600px;
+}
+
+.pLogo{
+    padding-top: 20px;
+}
+
+#data{
+    margin-left:60px;
+}
+
+.container2 input{
+    border:none;
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+    font-size:20px;
+    margin-top: 20px;
+    
+}
+
+.container2 h3{
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container2{
+    margin-left: 100px;
+}
+
+.title{
+    padding-bottom: 50px;
+   
+}
+.desejavel button{
+    background-color: #FFC709;
+    border: none;
+    padding:20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.desejavel button:hover{
+    background-color: #FFDB66;
+}
+
+.desejavel p{
+    margin-top: 20px;
+}
+/*Fim Form*/

@@ -15,13 +15,13 @@ body {
 /*Inicio Header*/
 header {
     background-color: #1B1B1B;
-    height: 80px;
+    height: 70px;
 }
 
 header h3 {
     font-size: 20px;
     float: left;
-    margin-top:40px;
+    margin-top:30px;
     margin-left: 400px;
 
 }
@@ -40,7 +40,7 @@ header img {
 }
 
 .imgm {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 10px;
 }
 
@@ -55,10 +55,17 @@ header img {
     min-height: 500px;
 }
 
+.container2 {
+    padding-top: 50px;
+}
+
 .showroom form{
     background-color: white;
-    width: 500px;
+    width: 400px;
     height: 300px;
+    padding-bottom: 80px;
+    margin-left: 700px;
+    
 }
 
 .data{
@@ -78,5 +85,30 @@ header img {
     padding-bottom: 2px;
     font-size:20px;
 }
+
+.data p{
+    padding-top:30px;
+    text-align: center;
+}
+
+.data a{
+    text-decoration: none;
+    color: #FFC709;
+}
+
+.data button{
+    width: 300px;
+    height: 40px;
+    background-color:  #FFC709;
+    border:none;
+    border-radius:5px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.data button:hover{
+    background-color: #FFDB66;
+}
+
 
 /*Fim SHOWROOM*/
