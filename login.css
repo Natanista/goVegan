@@ -46,3 +46,37 @@ header img {
 
 /*Fim Nav*/
 /*Fim Header*/
+
+
+/*Inicio SHOWROOM*/
+.showroom{
+    background-image: url(img/login33.png);
+    background-size: cover;
+    min-height: 500px;
+}
+
+.showroom form{
+    background-color: white;
+    width: 500px;
+    height: 300px;
+}
+
+.data{
+    padding: 30px;
+}
+
+.data input{
+    border:none;
+    border-bottom: 2px solid black;
+    width: 300px;
+    font-size:16px;
+    padding:10px;
+}
+
+.data h2{
+    margin-top: 30px;
+    padding-bottom: 2px;
+    font-size:20px;
+}
+
+/*Fim SHOWROOM*/
