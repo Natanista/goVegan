@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
 
 /*Inicio Global*/
 * {
@@ -10,6 +10,7 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 /*font-family: 'Roboto Slab', serif;*/
 /*Fim Global*/
 
@@ -84,20 +85,106 @@ header li {
 /*Inicio SHOWROOM*/
 .showroom {
     color: white;
-    padding: 300px ;
+    padding: 300px;
 }
 
-.showroom h2{
+.showroom h2 {
     font-family: 'Roboto Slab', serif;
     font-size: 35px;
     padding-bottom: 20px;
-    
+
 }
 
-.showroom p{
+.showroom p {
     width: 600px;
     font-size: 20px;
 }
+
 /*Fim SHOWROOM*/
 
 /*Fim Header*/
+
+/*Inicio Perfil*/
+.perfil {
+    color: white;
+    background-color: black;
+    height: 600px;
+}
+
+.perfil h1 {
+    font-family: 'Roboto Slab', serif;
+
+}
+
+#amarelo {
+    color: #FFC709;
+}
+
+.title {
+    padding-bottom: 60px;
+}
+
+.data {
+    margin-left: 300px;
+    padding-top: 70px;
+}
+
+.data p {
+    font-size: 20px;
+}
+
+.content img{
+    width: 300px;
+    margin-left: 900px;
+    border-left:1px solid yellow;
+    
+    padding-left: 30px;
+    paddin-top:30px;
+    position:relative;
+    bottom:220px;
+
+        
+}
+
+.data button {
+    background-color: #FFC709;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    border-radius: 3%;
+    border:none;
+}
+
+.data button:hover {
+    background-color: #FFDB66;
+}
+
+#descobrir {
+    margin-left: 550px;
+    margin-top: 56px;
+    color: #FFC709;
+}
+
+
+/*Fim Perfil*/
+
+/*Inicio Footer*/
+footer {
+    height: 150px;
+    text-align: center;
+}
+
+.redes img {
+    width: 35px;
+    display: inline-block
+}
+
+.redes li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*Fim Footer*/
