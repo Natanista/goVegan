@@ -102,9 +102,69 @@ header img {
     font-weight: bold;
 }
 
+.tryAgain-btn{
+    background-color: black;
+    color: #FFC709;
+    padding:10px;
+    width: 300px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tryAgain-btn:hover{
+    background-color: #262626;
+}
+
 .btn-form:hover{
     background-color:  #FFDB66;
 }
+
+/*Inicio Resposta*/
+.resposta{
+    margin-top: 60px;
+    background-color: black;
+    height: 500px;
+    color: white;
+   
+}
+
+.resposta img{
+    width: 250px;
+}
+
+.canal{
+   float: right;
+   padding:50px;
+}
+
+.block{
+    padding: 30px;
+    float: left;
+    margin-top: 30px;
+}
+
+#answer{
+    color: #FFC709;
+    ;
+}
+
+.informacao{
+    padding-top: 30px;
+    width: 1000px;
+    font-size: 20px;
+}
+
+.canal{
+    margin-right: 60px;
+}
+
+.canal p{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+/*Fim Resposta*/
 
 
 

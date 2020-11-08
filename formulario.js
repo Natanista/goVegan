@@ -1,27 +1,43 @@
 let answerA = 0;
 let answerB = 0;
 let answerC = 0;
+let finalValue = 0;
 
 function addA(){
     answerA++;
+    finalValue++;
 }
 
 function addB(){
     answerB++;
+    finalValue++;
 }
 
 function addC(){
     answerC++;
+    finalValue++;
 }
 
 function checar(){
-    if(answerA > answerB && answerA > answerC){
-        alert("A");
-    }else if(answerB > answerA && answerB > answerC){
-        alert("B");
-    }else if(answerC > answerA && answerC > answerB){
-        alert("C");
+    let agressivoDiv = document.getElementById("agressivo");
+    let conservadorDiv = document.getElementById("conservador");
+    let diversificadoDiv = document.getElementById("diversificado");
+    diversificadoDiv.style = "display:block";
+
+    if(answerA > answerB && answerA > answerC && finalValue >= 10){
+    }else if(answerB > answerA && answerB > answerC && finalValue >= 10){
+        diversificado.style.display = "block";
+    }else if(answerC > answerA && answerC > answerB && finalValue >= 10){
+        agressivo.style.display = "block";
+    }else if(answerA == answerB && finalValue >= 10){
+        conservador.style.display = "block";
+    }else if(answerA == answerC && finalValue >= 10){
+        conservador.style.display = "block";
+    }else if(answerB == answerC && finalValue >= 10){
+        diversificado.style.display = "none";
     }else{
-        alert("error")
+        alert("Selecione todas opções!")
     }
 }
+
+
