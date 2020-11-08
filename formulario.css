@@ -55,5 +55,58 @@ header img {
 .showcase{
     background-image: url(img/form3.png);
     height: 300px;
+    color: white;
+    border-bottom:2px solid yellow;
+}
+
+.text{
+    padding: 60px 0 0 90px;
+}
+
+.text h1{
+    font-size: 35px;
+    padding-bottom: 20px;
+    
+}
+
+.text p{
+    font-size:20px;
 }
 /*Fim Showcase*/
+
+/*Inicio Form*/
+.question{
+    font-weight: bold;
+    font-size:25px;
+}
+
+.questionario label{
+    font-size: 20px;
+}
+
+.questionario{
+    padding-bottom: 30px;
+    margin-left: 60px;
+    margin-top: 90px;
+}
+
+.btn{
+  padding-top: 40px;
+}
+
+.btn-form{
+    padding:10px;
+    width: 300px;
+    background-color: #FFC709;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-form:hover{
+    background-color:  #FFDB66;
+}
+
+
+
+
+/*Fim Form*/
