@@ -9,7 +9,7 @@
     <title>perfil de Investidor | codeInvestor</title>
 </head>
 
-<body>
+<body onload="resetar()">
     <!--Inicio Header-->
     <header>
         <div class="container">
@@ -38,192 +38,202 @@
         <!--Questão 1-->
         <div class="questionario">
             <p class="question">1 – Para que você investe ou investiria seu dinheiro?</p>
-            
+
             <p>a) Para não ficar com o dinheiro parado na minha conta e correr o risco de gastar
-            <p>b) Para conseguir
+                <p>b) Para conseguir
                     realizar alguns sonhos</p>
-            <p>c) Para obter rendimento e
+                <p>c) Para obter rendimento e
                     conseguir multiplicar minha renda</p>
-                    <div class="selects"></div><select id="seletor1">
-                        <option value="0">--Selectione uma opção--</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                    </select></div>
-                    <div id="error1"></div>
+                <div class="selects"></div><select id="seletor1">
+                    <option value="0">--Selectione uma opção--</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                </select>
+        </div>
+        <div id="error1"></div>
         </div>
 
         <!--Questão 2-->
         <div class="questionario">
             <p class="question">2 – Você aceitaria perder alguma porcentagem do recurso investido?</p>
-            
+
             <p>a) Não aceito ter prejuízo de nenhuma forma
-            <p>b) Se a quantia for
+                <p>b) Se a quantia for
                     pequena, tudo bem</p>
-            <p>c) Aceito correr o risco,
+                <p>c) Aceito correr o risco,
                     se tiver a possibilidade de ganhos maiores</p>
-                    <div class="selects"></div><select id="seletor2">
-                        <option value="0">--Selectione uma opção--</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                    </select></div>
-                    <div id="error2"></div>
+                <div class="selects"></div><select id="seletor2">
+                    <option value="0">--Selectione uma opção--</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                </select>
+        </div>
+        <div id="error2"></div>
         </div>
 
         <!--Questão 3-->
         <div class="questionario">
             <p class="question">3 – Como você poupa rendas extras, como 13º salário, restituição de IRPF, etc.?</p>
-            
+
             <p>a) Invisto em aplicações seguras
-            <p>b) Coloco a maior
+                <p>b) Coloco a maior
                     porcentagem em investimentos sem riscos e uma pequena parte em modalidades mais arrojadas
-            </p>
-            <p>c) Aplico boa parte dos
+                </p>
+                <p>c) Aplico boa parte dos
                     meus recursos em investimentos de risco, que possuem maiores chances de rendimentos altos e a menor
                     parte em modalidades mais conservadoras</p>
-                    <div class="selects"></div><select id="seletor3">
-                        <option value="0">--Selectione uma opção--</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                    </select></div>
-                    <div id="error3"></div>
+                <div class="selects"></div><select id="seletor3">
+                    <option value="0">--Selectione uma opção--</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                </select>
+        </div>
+        <div id="error3"></div>
         </div>
 
         <!--Questão 4-->
         <div class="questionario">
             <p class="question">4 – Como se planeja para a aposentadoria?</p>
-           
+
             <p>a) Poupo e invisto em uma aplicação de baixo risco
-            <p>b) Parte do que guardo
+                <p>b) Parte do que guardo
                     coloco em um fundo conservador e outra parte (menor) em investimentos mais agressivos</p>
-            <p>c) Sempre distribuo meus
+                <p>c) Sempre distribuo meus
                     recursos em investimentos que gerem alto retorno financeiro</p>
-                    <div class="selects"></div><select id="seletor4">
-                        <option value="0">--Selectione uma opção--</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                    </select></div>
-                    <div id="error4"></div>
+                <div class="selects"></div><select id="seletor4">
+                    <option value="0">--Selectione uma opção--</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                </select>
+        </div>
+        <div id="error4"></div>
         </div>
 
         <!--Questão 5-->
         <div class="questionario">
             <p class="question">5 – Para você, ter um futuro sustentável financeiramente significa:</p>
-            
+
             <p>a) Ter segurança financeira, ainda que seja pouca quantia
-            <p>b) Guardar a maior parte
+                <p>b) Guardar a maior parte
                     do dinheiro de maneira cautelosa e, ao mesmo tempo, separar uma parte menor para conseguir um
                     rendimento maior</p>
-            <p>c) Ter cada vez mais
+                <p>c) Ter cada vez mais
                     dinheiro rendendo, ainda que tenha riscos</p>
-                    <div class="selects"></div><select id="seletor5">
-                        <option value="0">--Selectione uma opção--</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                    </select></div>
-                    <div id="error5"></div>
+                <div class="selects"></div><select id="seletor5">
+                    <option value="0">--Selectione uma opção--</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                </select>
+        </div>
+        <div id="error5"></div>
         </div>
 
         <!--Questão 6-->
         <div class="questionario">
             <p class="question">6 – O que faria você mudar seu planejamento financeiro?</p>
-            
+
             <p>a) Apenas situações emergenciais
-            <p> b) Diante de alguma
+                <p> b) Diante de alguma
                     emergência ou chance de ganhar mais dinheiro</p>
-            <p>c) Se houver alguma
+                <p>c) Se houver alguma
                     emergência, chance de ter mais rendimentos e anseio por novos desafios</p>
-                    <div class="selects"></div><select id="seletor6">
-                        <option value="0">--Selectione uma opção--</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                    </select></div>
-                    <div id="error6"></div>
+                <div class="selects"></div><select id="seletor6">
+                    <option value="0">--Selectione uma opção--</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                </select>
+        </div>
+        <div id="error6"></div>
         </div>
 
         <!--Questão 7-->
         <div class="questionario">
             <p class="question">7 – Sua principal fonte de renda é…</p>
-            
+
             <p>a) Aposentadoria
-            <p> b) Salário fixo
-            </p>
-            <p>c) Salário e rendimento de
+                <p> b) Salário fixo
+                </p>
+                <p>c) Salário e rendimento de
                     investimentos</p>
-                    <div class="selects"></div><select id="seletor7">
-                        <option value="0">--Selectione uma opção--</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                    </select></div>
-                    <div id="error7"></div>
+                <div class="selects"></div><select id="seletor7">
+                    <option value="0">--Selectione uma opção--</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                </select>
+        </div>
+        <div id="error7"></div>
         </div>
 
         <!--Questão 8-->
         <div class="questionario">
             <p class="question">8 – Você investe ou investiria seu dinheiro seguindo alguma especulação?</p>
-            
+
             <p>a) Não, isso está fora de cogitação
-            <p> b) Talvez uma pequena
+                <p> b) Talvez uma pequena
                     parte do meu dinheiro</p>
-            <p>c) Investiria, porque o
+                <p>c) Investiria, porque o
                     risco é proporcional aos ganhos</p>
-                    <div class="selects"></div><select id="seletor8">
-                        <option value="0">--Selectione uma opção--</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                    </select></div>
-                    <div id="error8"></div>
+                <div class="selects"></div><select id="seletor8">
+                    <option value="0">--Selectione uma opção--</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                </select>
+        </div>
+        <div id="error8"></div>
         </div>
 
         <!--Questão 9-->
         <div class="questionario">
             <p class="question">9 – Tem o costume de acompanhar as variações de mercado dos investimentos?</p>
-           
+
             <p>a) Não vejo nada sobre isso
-            <p> b) Procuro informações
+                <p> b) Procuro informações
                     apenas dos quais aplico</p>
-            <p>c) Acompanho tudo, pois
+                <p>c) Acompanho tudo, pois
                     tenho interesse em várias modalidades</p>
-                    <div class="selects"></div><select id="seletor9">
-                        <option value="0">--Selectione uma opção--</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                    </select></div>
-                    <div id="error9"></div>
+                <div class="selects"></div><select id="seletor9">
+                    <option value="0">--Selectione uma opção--</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                </select>
+        </div>
+        <div id="error9"></div>
         </div>
 
         <!--Questão 10-->
         <div class="questionario">
             <p class="question">10 – Qual é o seu principal objetivo financeiro para o futuro?</p>
-            
-            <p>a) Segurança é tudo o que importa para mim
-            <p> b) Quero segurança, mas
-                    também quero poder curtir a vida</p>
-            <p>c) Meu objetivo é acumular
-                    riquezas</p>
-                  <select id="seletor10">
-                        <option value="0">--Selectione uma opção--</option>
-                        <option value="1">A</option>
-                        <option value="2">B</option>
-                        <option value="3">C</option>
-                    </select></div>
-                    <div id="error10"></div>
 
-           
+            <p>a) Segurança é tudo o que importa para mim
+                <p> b) Quero segurança, mas
+                    também quero poder curtir a vida</p>
+                <p>c) Meu objetivo é acumular
+                    riquezas</p>
+                <div class="selects"></div><select id="seletor10">
+                    <option value="0">--Selectione uma opção--</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                </select>
+        </div>
+        <div id="error10"></div>
+
+
     </form>
     <!--Fim Formulario-->
-    <div class="btn">     
-        <button class="btn-form" onclick="descobrir()" >DESCOBRIR</button>   
-        <button class="tryAgain-btn" onclick="resetar()">Tentar Novamente</button>      
-</div>
+    <div class="btn">
+        <button class="btn-form" onclick="descobrir()">DESCOBRIR</button>
+        <a href="formulario.html"><button class="tryAgain-btn">Tentar Novamente</button></a>
+    </div>
     <!--Inicio Conservador-->
     <div class="resposta" id="conservador" style="display: none;">
         <div class="block">
