@@ -78,16 +78,28 @@ header img {
 .question{
     font-weight: bold;
     font-size:25px;
+    margin-bottom: 15px;
 }
 
-.questionario label{
+.questionario select{
+    background-color: black;
+    color:#FFC709 ;
+    border: none;
+    width: 350px;
+    text-align: center;
     font-size: 20px;
+    padding: 5px;
 }
 
 .questionario{
     padding-bottom: 30px;
     margin-left: 60px;
     margin-top: 90px;
+}
+
+.selects{
+    padding-top: 30px;
+
 }
 
 .btn{
@@ -162,6 +174,17 @@ header img {
     text-align: center;
     font-size: 25px;
     padding-bottom: 20px;
+}
+
+.questionario p{
+    font-size: 25px;
+    margin-top: 5px;
+    max-width: 1100px;
+}
+
+.btn{
+    margin-bottom: 20px;
+    margin-left: 600px;
 }
 
 /*Fim Resposta*/
