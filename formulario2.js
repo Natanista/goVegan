@@ -1,3 +1,6 @@
+
+function descobrir() {
+
 //atribuindo a variavel "seletor" os elemntos com id "seletor";
 let seletor1 = document.getElementById("seletor1").value;
 let seletor2 = document.getElementById("seletor2").value;
@@ -10,10 +13,11 @@ let seletor8 = document.getElementById("seletor8").value;
 let seletor9 = document.getElementById("seletor9").value;
 let seletor10 = document.getElementById("seletor10").value;
 
-function descobrir() {
+//atribuindo as divs a variavel respectiva
   let conservadorDiv = document.getElementById("conservador");
   let diversificadoDiv = document.getElementById("diversificado");
   let agressivoDiv = document.getElementById("agressivo");
+
   //variaveis para comparação posterior de escolhas
   let answerA = 0;
   let answerB = 0;
@@ -121,22 +125,9 @@ function descobrir() {
   }
 
   //validando para que nenhum campo não fique preenchido
-  if (
-    seletor1 == "0" ||
-    seletor2 == "0" ||
-    seletor3 == "0" ||
-    seletor4 == "0" ||
-    seletor5 == "0" ||
-    seletor6 == "0" ||
-    seletor7 == "0" ||
-    seletor8 == "0" ||
-    seletor9 == "0" ||
-    seletor10 == "0"
-  ) {
-    alert("Atenção, preencha todos os campos!");
-  } else {
+
     //validando o perfil de acordo com as respostas acumuladas
-    if (answerA > answerB && answerA > answerC) {
+ if (answerA > answerB && answerA > answerC) {
       conservadorDiv.style.display = "block";
       agressivoDiv.style.display = "none";
       diversificadoDiv.style.display = "none";
@@ -162,4 +153,3 @@ function descobrir() {
       diversificadoDiv.style.display = "none";
     }
   }
-}
