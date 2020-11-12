@@ -22,26 +22,33 @@ let seletor10 = document.getElementById("seletor10").value;
   let answerA = 0;
   let answerB = 0;
   let answerC = 0;
+  let validador = 0;
 
   //atribuindo as escolhas da combo-box para variaveis
   if (seletor1 == "1") {
     answerA++;
+    validador++;
   } else if (seletor1 == "2") {
     answerB++;
+    validador++;
   } else if (seletor1 == "3") {
     answerC++;
+    validador++;
   } else {
-    error1.innerHTML = `<i style="color>red">*Não deixe de preencher este campo!</i>`;
+    error1.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
 
   if (seletor2 == "1") {
     answerA++;
+    validador++;
   } else if (seletor2 == "2") {
     answerB++;
+    validador++;
   } else if (seletor2 == "3") {
     answerC++;
+    validador++;
   } else {
-    error2.innerHTML = `<i style="color>red">*Não deixe de preencher este campo!</i>`;
+    error2.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
 
   if (seletor3 == "1") {
@@ -51,105 +58,135 @@ let seletor10 = document.getElementById("seletor10").value;
   } else if (seletor3 == "3") {
     answerC++;
   } else {
-    error3.innerHTML = `<i style="color>red">*Não deixe de preencher este campo!</i>`;
+    error3.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
 
   if (seletor4 == "1") {
     answerA++;
+    validador++;
   } else if (seletor4 == "2") {
     answerB++;
+    validador++;
   } else if (seletor4 == "3") {
     answerC++;
+    validador++;
   } else {
-    error4.innerHTML = `<i style="color>red">*Não deixe de preencher este campo!</i>`;
+    error4.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
 
   if (seletor5 == "1") {
     answerA++;
+    validador++;
   } else if (seletor5 == "2") {
     answerB++;
+    validador++;
   } else if (seletor5 == "3") {
     answerC++;
+    validador++;
   } else {
-    error5.innerHTML = `<i style="color>red">*Não deixe de preencher este campo!</i>`;
+    error5.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
 
   if (seletor6 == "1") {
     answerA++;
+    validador++;
   } else if (seletor6 == "2") {
     answerB++;
+    validador++;
   } else if (seletor6 == "3") {
     answerC++;
+    validador++;
   } else {
-    error6.innerHTML = `<i style="color>red">*Não deixe de preencher este campo!</i>`;
+    error6.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
 
   if (seletor7 == "1") {
     answerA++;
+    validador++;
   } else if (seletor7 == "2") {
     answerB++;
+    validador++;
   } else if (seletor7 == "3") {
     answerC++;
+    validador++;
   } else {
-    error7.innerHTML = `<i style="color>red">*Não deixe de preencher este campo!</i>`;
+    error7.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
 
   if (seletor8 == "1") {
     answerA++;
+    validador++;
   } else if (seletor8 == "2") {
     answerB++;
+    validador++;
   } else if (seletor8 == "3") {
     answerC++;
+    validador++;
   } else {
-    error8.innerHTML = `<i style="color>red">*Não deixe de preencher este campo!</i>`;
+    error8.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
 
   if (seletor9 == "1") {
     answerA++;
+    validador++;
   } else if (seletor9 == "2") {
     answerB++;
+    validador++;
   } else if (seletor9 == "3") {
     answerC++;
+    validador++;
   } else {
-    error9.innerHTML = `<i style="color>red">*Não deixe de preencher este campo!</i>`;
+    error9.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
 
   if (seletor10 == "1") {
     answerA++;
+    validador++;
   } else if (seletor10 == "2") {
     answerB++;
+    validador++;
   } else if (seletor10 == "3") {
     answerC++;
+    validador++;
   } else {
-    error10.innerHTML = `<i style="color>red">*Não deixe de preencher este campo!</i>`;
+    error10.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
 
   //validando para que nenhum campo não fique preenchido
 
     //validando o perfil de acordo com as respostas acumuladas
- if (answerA > answerB && answerA > answerC) {
-      conservadorDiv.style.display = "block";
-      agressivoDiv.style.display = "none";
-      diversificadoDiv.style.display = "none";
-    } else if (answerB > answerA && answerB > answerC) {
-      diversificadoDiv.style.display = "block";
-      conservadorDiv.style.display = "none";
-      agressivoDiv.style.display = "none";
-    } else if (answerC > answerA && answerC > answerB) {
-      agressivoDiv.style.display = "block";
-      conservadorDiv.style.display = "none";
-      diversificadoDiv.style.display = "none";
-    } else if (answerA == answerB) {
-      conservadorDiv.style.display = "block";
-      diversificadoDiv.style.display = "none";
-      agressivoDiv.style.display = "none";
-    } else if (answerC == answerB) {
-      diversificadoDiv.style.display = "block";
-      conservadorDiv.style.display = "none";
-      agressivoDiv.style.display = "none";
-    } else {
-      conservadorDiv.style.display = "block";
-      agressivoDiv.style.display = "none";
-      diversificadoDiv.style.display = "none";
+    if(validador < 9){
+        alert("Lembre-se de assinalar todas opções!")
+            diversificadoDiv.style.display = "none";
+            conservadorDiv.style.display = "none";
+            agressivoDiv.style.display = "none";
+           
+    }else{
+        if (answerA > answerB && answerA > answerC) {
+            conservadorDiv.style.display = "block";
+            agressivoDiv.style.display = "none";
+            diversificadoDiv.style.display = "none";
+          } else if (answerB > answerA && answerB > answerC) {
+            diversificadoDiv.style.display = "block";
+            conservadorDiv.style.display = "none";
+            agressivoDiv.style.display = "none";
+          } else if (answerC > answerA && answerC > answerB) {
+            agressivoDiv.style.display = "block";
+            conservadorDiv.style.display = "none";
+            diversificadoDiv.style.display = "none";
+          } else if (answerA == answerB) {
+            conservadorDiv.style.display = "block";
+            diversificadoDiv.style.display = "none";
+            agressivoDiv.style.display = "none";
+          } else if (answerC == answerB) {
+            diversificadoDiv.style.display = "block";
+            conservadorDiv.style.display = "none";
+            agressivoDiv.style.display = "none";
+          } else {
+            conservadorDiv.style.display = "block";
+            agressivoDiv.style.display = "none";
+            diversificadoDiv.style.display = "none";
+          }
     }
+ 
   }
