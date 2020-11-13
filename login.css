@@ -10,6 +10,7 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 /*font-family: 'Roboto Slab', serif;*/
 /*Fim Global*/
 /*Inicio Header*/
@@ -21,7 +22,7 @@ header {
 header h3 {
     font-size: 20px;
     float: left;
-    margin-top:30px;
+    margin-top: 30px;
     margin-left: 400px;
 
 }
@@ -34,8 +35,8 @@ header a {
 header img {
     width: 40px;
     float: left;
-    
-    
+
+
 
 }
 
@@ -49,7 +50,7 @@ header img {
 
 
 /*Inicio SHOWROOM*/
-.showroom{
+.showroom {
     background-image: url(img/login33.png);
     background-size: cover;
     min-height: 500px;
@@ -59,54 +60,54 @@ header img {
     padding-top: 50px;
 }
 
-.showroom form{
+.showroom form {
     background-color: white;
     width: 400px;
     height: 300px;
     padding-bottom: 80px;
     margin-left: 700px;
-    
+
 }
 
-.data{
+.data {
     padding: 30px;
 }
 
-.data input{
-    border:none;
+.data input {
+    border: none;
     border-bottom: 2px solid black;
     width: 300px;
-    font-size:16px;
-    padding:10px;
+    font-size: 16px;
+    padding: 10px;
 }
 
-.data h2{
+.data h2 {
     margin-top: 30px;
     padding-bottom: 2px;
-    font-size:20px;
+    font-size: 20px;
 }
 
-.data p{
-    padding-top:30px;
+.data p {
+    padding-top: 30px;
     text-align: center;
 }
 
-.data a{
+.data a {
     text-decoration: none;
     color: #FFC709;
 }
 
-.data button{
+.data button {
     width: 300px;
     height: 40px;
-    background-color:  #FFC709;
-    border:none;
-    border-radius:5px;
-    font-size:20px;
-    cursor:pointer;
+    background-color: #FFC709;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-.data button:hover{
+.data button:hover {
     background-color: #FFDB66;
 }
 

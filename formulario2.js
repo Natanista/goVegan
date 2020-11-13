@@ -1,19 +1,17 @@
-
 function descobrir() {
+  //atribuindo a variavel "seletor" os elemntos com id "seletor";
+  let seletor1 = document.getElementById("seletor1").value;
+  let seletor2 = document.getElementById("seletor2").value;
+  let seletor3 = document.getElementById("seletor3").value;
+  let seletor4 = document.getElementById("seletor4").value;
+  let seletor5 = document.getElementById("seletor5").value;
+  let seletor6 = document.getElementById("seletor6").value;
+  let seletor7 = document.getElementById("seletor7").value;
+  let seletor8 = document.getElementById("seletor8").value;
+  let seletor9 = document.getElementById("seletor9").value;
+  let seletor10 = document.getElementById("seletor10").value;
 
-//atribuindo a variavel "seletor" os elemntos com id "seletor";
-let seletor1 = document.getElementById("seletor1").value;
-let seletor2 = document.getElementById("seletor2").value;
-let seletor3 = document.getElementById("seletor3").value;
-let seletor4 = document.getElementById("seletor4").value;
-let seletor5 = document.getElementById("seletor5").value;
-let seletor6 = document.getElementById("seletor6").value;
-let seletor7 = document.getElementById("seletor7").value;
-let seletor8 = document.getElementById("seletor8").value;
-let seletor9 = document.getElementById("seletor9").value;
-let seletor10 = document.getElementById("seletor10").value;
-
-//atribuindo as divs a variavel respectiva
+  //atribuindo as divs a variavel respectiva
   let conservadorDiv = document.getElementById("conservador");
   let diversificadoDiv = document.getElementById("diversificado");
   let agressivoDiv = document.getElementById("agressivo");
@@ -154,39 +152,37 @@ let seletor10 = document.getElementById("seletor10").value;
 
   //validando para que nenhum campo não fique preenchido
 
-    //validando o perfil de acordo com as respostas acumuladas
-    if(validador < 9){
-        alert("Lembre-se de assinalar todas opções!")
-            diversificadoDiv.style.display = "none";
-            conservadorDiv.style.display = "none";
-            agressivoDiv.style.display = "none";
-           
-    }else{
-        if (answerA > answerB && answerA > answerC) {
-            conservadorDiv.style.display = "block";
-            agressivoDiv.style.display = "none";
-            diversificadoDiv.style.display = "none";
-          } else if (answerB > answerA && answerB > answerC) {
-            diversificadoDiv.style.display = "block";
-            conservadorDiv.style.display = "none";
-            agressivoDiv.style.display = "none";
-          } else if (answerC > answerA && answerC > answerB) {
-            agressivoDiv.style.display = "block";
-            conservadorDiv.style.display = "none";
-            diversificadoDiv.style.display = "none";
-          } else if (answerA == answerB) {
-            conservadorDiv.style.display = "block";
-            diversificadoDiv.style.display = "none";
-            agressivoDiv.style.display = "none";
-          } else if (answerC == answerB) {
-            diversificadoDiv.style.display = "block";
-            conservadorDiv.style.display = "none";
-            agressivoDiv.style.display = "none";
-          } else {
-            conservadorDiv.style.display = "block";
-            agressivoDiv.style.display = "none";
-            diversificadoDiv.style.display = "none";
-          }
+  //validando o perfil de acordo com as respostas acumuladas
+  if (validador < 9) {
+    alert("Lembre-se de assinalar todas opções!");
+    diversificadoDiv.style.display = "none";
+    conservadorDiv.style.display = "none";
+    agressivoDiv.style.display = "none";
+  } else {
+    if (answerA > answerB && answerA > answerC) {
+      conservadorDiv.style.display = "block";
+      agressivoDiv.style.display = "none";
+      diversificadoDiv.style.display = "none";
+    } else if (answerB > answerA && answerB > answerC) {
+      diversificadoDiv.style.display = "block";
+      conservadorDiv.style.display = "none";
+      agressivoDiv.style.display = "none";
+    } else if (answerC > answerA && answerC > answerB) {
+      agressivoDiv.style.display = "block";
+      conservadorDiv.style.display = "none";
+      diversificadoDiv.style.display = "none";
+    } else if (answerA == answerB) {
+      conservadorDiv.style.display = "block";
+      diversificadoDiv.style.display = "none";
+      agressivoDiv.style.display = "none";
+    } else if (answerC == answerB) {
+      diversificadoDiv.style.display = "block";
+      conservadorDiv.style.display = "none";
+      agressivoDiv.style.display = "none";
+    } else {
+      conservadorDiv.style.display = "block";
+      agressivoDiv.style.display = "none";
+      diversificadoDiv.style.display = "none";
     }
- 
   }
+}
