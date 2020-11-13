@@ -4,11 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aprenda.css">
     <title></title>
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <h3>codeInvestor</h3>
+                <img class="imgm" src="img/icon2.png" alt="logo codeInvestor">
+            </a>
+        </div>
 
+    </header>
+    <!--Fim Header-->
+    <div class="showroom">
+        <p id="paragraph">Se eduque financeiramente de acordo com seu perfil de investidor <p>Ainda não conhece o seu
+                perfil? <a href="formulario.html">Clique aqui</a></p>
+        </p>
+
+
+    </div>
+
+    <div class="form">
+        <h1>Qual o seu perfil de investidor?</h1>
+        <select id="combo" onchange="mostrar()">
+            <option value="0">-- Selecione um perfil --</option>
+            <option value="1">Conservador</option>
+            <option value="2">Diversificado</option>
+            <option value="3">Agressivo</option>
+        </select>
+    </div>
+
+    <div id="livros">
+
+    </div>
+
+
+
+
+
+
+    <script src="aprenda.js"></script>
 </body>
 
 </html>

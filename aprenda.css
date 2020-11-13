@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+/*Inicio Global*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*font-family: 'Roboto Slab', serif;*/
+/*Fim Global*/
+
+/*Inicio Header*/
+header {
+    background-color: #1B1B1B;
+    height: 70px;
+}
+
+header h3 {
+    font-size: 20px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 400px;
+
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header img {
+    width: 40px;
+    float: left;
+
+
+
+}
+
+.title a {
+    text-decoration: none;
+    color: #FFC709;
+}
+
+.imgm {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+/*Fim Header*/
+
+/*Começo SHOWROOM*/
+.showroom{
+    background-image: url(img/money.jpg);
+    background-size: cover;
+    min-height: 250px;
+
+}
+
+.showroom h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top:60px ;
+    width: 900px;
+    margin-left: 100px;
+}
+
+.showroom p{
+    color: white;
+    font-size: 20px;
+    width: 500px;
+    padding: 30px 0 0 60px;
+    
+}
+
+.showroom a{
+    text-decoration: none;
+    color: #FFC709;
+}
+
+.showroom a:hover{
+    border-bottom: 1px solid #FFC709;
+}
+
+#paragraph{
+    font-size: 30px;
+}
+/*Fim SHOWROOM*/
+
+/*Inicio FORM*/
+.form{
+    height: 650px;
+}
+
+.form h1{
+   padding:50px 0 0 60px;
+   font-size: 50px;
+}
+
+.form select{
+    margin-left: 60px;
+    margin-top: 30px;
+    background-color:black;
+    color: #FFC709;
+    width: 400px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+/*Fim FORM*/
+
+/*Inicio Livros*/
+
+/*Fim Livros*/
