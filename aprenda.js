@@ -17,7 +17,7 @@ typeWriter(titulo);
 let valorLivro = document.getElementById("livros").value;
 function mostrar(){
     if(valorLivro == 1){
-
+        
     }else if(valorLivros == 2){
 
     }else{
