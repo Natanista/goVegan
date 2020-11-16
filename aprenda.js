@@ -1,26 +1,27 @@
-//Função para o efeito de maquina de escrever
-function typeWriter(elemento){
-    //split: divide uma string em indices de uma lista(array)
-    const textoArray = elemento.innerHTML.split('');
-    elemento.innerHTML = '';
-    //forEach permite executar uma função para cada item de um array
-    textoArray.forEach((letra,i)=>{
-        setTimeout(() => elemento.innerHTML += letra, 75 * i)
-    });
-}
-//atribuindo o h1 a tag titulo
-const titulo = document.querySelector('h1');
-//ultilizando o título como parâmetro da função
-typeWriter(titulo);
-
 //função para mostrar os livros de acordo com o perfil
-let valorLivro = document.getElementById("livros").value;
-function mostrar(){
-    if(valorLivro == 1){
-        
-    }else if(valorLivros == 2){
+combo.value = "0";
 
-    }else{
-        
-    }
+function mostrar() {
+  let comboValue = document.getElementById("combo").value;
+  let conservador = document.getElementById("conservador");
+  let diversificado = document.getElementById("diversificado");
+  let agressivo = document.getElementById("agressivo");
+
+  if (comboValue == "1") {
+    diversificado.style.display = `none`;
+    conservador.style.display = `block`;
+    agressivo.style.display = `none`;
+  } else if (comboValue == "2") {
+    diversificado.style.display = `block`;
+    conservador.style.display = `none`;
+    agressivo.style.display = `none`;
+  } else if (comboValue == "3") {
+    agressivo.style.display = `block`;
+    conservador.style.display = `none`;
+    diversificado.style.display = `none`;
+  } else {
+    conservador.style.display = `none`;
+    agressivo.style.display = `none`;
+    diversificado.style.display = `none`;
+  }
 }

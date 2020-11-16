@@ -53,57 +53,21 @@ header img {
 
 /*Fim Header*/
 
-/*Começo SHOWROOM*/
-.showroom{
-    background-image: url(img/money.jpg);
-    background-size: cover;
-    min-height: 250px;
-
-}
-
-.showroom h1{
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    padding-top:60px ;
-    width: 900px;
-    margin-left: 100px;
-}
-
-.showroom p{
-    color: white;
-    font-size: 20px;
-    width: 500px;
-    padding: 30px 0 0 60px;
-    
-}
-
-.showroom a{
-    text-decoration: none;
-    color: #FFC709;
-}
-
-.showroom a:hover{
-    border-bottom: 1px solid #FFC709;
-}
-
-#paragraph{
-    font-size: 30px;
-}
-/*Fim SHOWROOM*/
-
 /*Inicio FORM*/
 .form{
-    height: 650px;
+    height: 250px;
+    border-bottom: 1px solid black;
+    
 }
 
 .form h1{
    padding:50px 0 0 60px;
    font-size: 50px;
+   margin-left: 60px;
 }
 
 .form select{
-    margin-left: 60px;
+    margin-left: 120px;
     margin-top: 30px;
     background-color:black;
     color: #FFC709;
@@ -115,5 +79,50 @@ header img {
 /*Fim FORM*/
 
 /*Inicio Livros*/
+.bloco{
+    background-color: black;
+    text-align: center;
+    min-height: 700px;
+}
 
+.bloco h2{
+    color: #FFC709 ;
+    padding-top:30px;
+    font-size: 40px;
+}
+
+.bloco-box{
+    padding: 40px 0 100px 40px;
+    display: inline-block;
+}
+
+.bloco-box a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.bloco-box p {
+    width: 200px;
+    margin-left: 15px;
+}
+
+.bloco-box p:hover{
+    color: #FFC709;
+}
+
+.bloco-box img{
+    width: 200px;
+    padding: 20px;
+}
+
+#conservador{
+    display: none;
+}
+#diversificado{
+    display: none;
+}
+#agressivo{
+    display: none;
+}
 /*Fim Livros*/

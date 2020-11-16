@@ -109,4 +109,12 @@ header img {
     margin-top: 20px;
 }
 
+input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    border-bottom: 1px solid black;
+
+} 
+
 /*Fim Form*/
