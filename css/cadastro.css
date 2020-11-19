@@ -116,4 +116,12 @@ input:focus {
     padding: 10px 0 -2px 0 ;
 }
 
+#combo{
+    margin-top:10px;
+    background-color: black;
+    color: #ffc709;
+    padding: 10px;
+    font-size:15px;
+}
+
 /*Fim Form*/

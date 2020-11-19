@@ -17,7 +17,7 @@ body {
 
 /*Inicio Header*/
 header {
-    background-image: url(img/wpp_oficiall.png);
+    background-image: url(../img/wpp_oficiall.png);
     background-size: cover;
     height: 800px;
 }

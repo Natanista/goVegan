@@ -76,6 +76,21 @@ header img {
     font-size: 25px;
     text-align: center;
 }
+
+.form a{
+    text-decoration: none;
+    color: #ffc709;
+    margin-left: 10px;
+   
+  
+}
+
+.form p{
+    font-size: 25px;
+    margin-left: 130px;
+    padding-top:20px ;
+    font-weight: bold;
+}
 /*Fim FORM*/
 
 /*Inicio Livros*/

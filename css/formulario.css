@@ -55,7 +55,7 @@ header img {
 
 /*Inicio Showcase*/
 .showcase {
-    background-image: url(img/form3.png);
+    background-image: url(../img/form3.png);
     height: 300px;
     color: white;
     border-bottom: 2px solid yellow;
