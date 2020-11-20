@@ -1,4 +1,5 @@
-# codeInvestor
-projeto individual de PI + SocioEmocional
+# projeto-modelo-individual-1ads-202
+Projeto Modelo para o Projeto Individual para as turmas de 1º Semestre - ADS - 2020/2 - Bandtec Digital School
 
-O codeInvestor é um portal que tem como objetivo levar a educação financeira para comunidade DEV. No Brasil, apenas 0.5% da população tem o costume de investir o seu dinheiro, enquanto isso, cerca de 64% se encontrar endividados. O principal objetivo do projeto é levar um pouco de conheimento sobre finanças para esse nicho, sendo assim, diminuindo a porcentagem negativa presente no Brasil.
+## Acesse o tutorial
+Indo em projeto-site/O-QUE-FAZER-AQUI.txt
