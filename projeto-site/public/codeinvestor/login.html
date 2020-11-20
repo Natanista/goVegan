@@ -23,21 +23,76 @@
     <!--Inicio SHOWROOM-->
     <div class="showroom">
         <div class="container2">
-            <form>
+            <form id="form">
                 <div class="data">
                     <h2>LOGIN:</h2>
                     <input type="text" id="login" required>
                     <h2>SENHA:</h2>
                     <input type="password" id="senha" required>
-                    <p><button onclick="entrar()">ENTRAR</button></p>
+                    <p><button id="btn_entrar" onclick="entrar()">ENTRAR</button></p>
                     <p>Ainda não tem cadastro? <a href="cadastro.html">Clique Aqui!</a></p>
+                    <div class="extra">
+                        <div id="div_erro" class="msg_erro">
+                        </div>
+    
+                        <img src="../img/carregando.gif" id="img_aguarde"  >
+                        
+                    </div>
                 </div>
             </form>
         </div>
     </div>
 
     <!--Fim SHOWROOM-->
+    <script>
 
+        function entrar() {
+            aguardar();
+            var formulario = new URLSearchParams(new FormData(form));
+            fetch("/usuarios/autenticar", {
+                method: "POST",
+                body: formulario
+            }).then(resposta => {
+    
+                if (resposta.ok) {
+    
+                    resposta.json().then(json => {
+    
+                        sessionStorage.login_usuario_meuapp = json.login;
+                        sessionStorage.nome_usuario_meuapp = json.nome;
+    
+                        window.location.href = 'formulario.html';
+                    });
+    
+                } else {
+    
+                    console.log('Erro de login!');
+    
+                    resposta.text().then(texto => {
+                        console.error(texto);
+                        finalizar_aguardar(texto);
+                    });
+                }
+            });
+    
+            return false;
+        }
+    
+        function aguardar() {
+            btn_entrar.disabled = true;
+            img_aguarde.style.visibility = 'visible';
+            div_erro.style.visibility = 'hidden';
+        }
+    
+        function finalizar_aguardar(resposta) {
+            btn_entrar.disabled = false;
+            img_aguarde.style.visibility = 'hidden';
+            div_erro.style.visibility = 'visible';
+            div_erro.innerHTML = resposta;
+        }
+    
+    </script>
+    
 
 </body>
 

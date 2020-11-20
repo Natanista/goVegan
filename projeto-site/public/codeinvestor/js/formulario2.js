@@ -26,12 +26,15 @@ function descobrir() {
   if (seletor1 == "1") {
     answerA++;
     validador++;
+    error1.innerHTML = ``;
   } else if (seletor1 == "2") {
     answerB++;
     validador++;
+    error1.innerHTML = ``;
   } else if (seletor1 == "3") {
     answerC++;
     validador++;
+    error1.innerHTML = ``;
   } else {
     error1.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
@@ -39,22 +42,31 @@ function descobrir() {
   if (seletor2 == "1") {
     answerA++;
     validador++;
+    error2.innerHTML = ``;
   } else if (seletor2 == "2") {
     answerB++;
     validador++;
+    error2.innerHTML = ``;
   } else if (seletor2 == "3") {
     answerC++;
     validador++;
+    error2.innerHTML = ``;
   } else {
     error2.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
 
   if (seletor3 == "1") {
     answerA++;
+    validador++;
+    error4.innerHTML = ``;
   } else if (seletor3 == "2") {
     answerB++;
+    validador++;
+    error3.innerHTML = ``;
   } else if (seletor3 == "3") {
     answerC++;
+    validador++;
+    error3.innerHTML = ``;
   } else {
     error3.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
@@ -62,12 +74,15 @@ function descobrir() {
   if (seletor4 == "1") {
     answerA++;
     validador++;
+    error4.innerHTML = ``;
   } else if (seletor4 == "2") {
     answerB++;
     validador++;
+    error4.innerHTML = ``;
   } else if (seletor4 == "3") {
     answerC++;
     validador++;
+    error4.innerHTML = ``;
   } else {
     error4.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
@@ -75,12 +90,15 @@ function descobrir() {
   if (seletor5 == "1") {
     answerA++;
     validador++;
+    error5.innerHTML = ``;
   } else if (seletor5 == "2") {
     answerB++;
     validador++;
+    error5.innerHTML = ``;
   } else if (seletor5 == "3") {
     answerC++;
     validador++;
+    error5.innerHTML = ``;
   } else {
     error5.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
@@ -88,12 +106,16 @@ function descobrir() {
   if (seletor6 == "1") {
     answerA++;
     validador++;
+    error6.innerHTML = ``;
   } else if (seletor6 == "2") {
     answerB++;
     validador++;
+    error6.innerHTML = ``;
+
   } else if (seletor6 == "3") {
     answerC++;
     validador++;
+    error6.innerHTML = ``;
   } else {
     error6.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
@@ -101,12 +123,15 @@ function descobrir() {
   if (seletor7 == "1") {
     answerA++;
     validador++;
+    error7.innerHTML = ``;
   } else if (seletor7 == "2") {
     answerB++;
     validador++;
+    error7.innerHTML = ``;
   } else if (seletor7 == "3") {
     answerC++;
     validador++;
+    error7.innerHTML = ``;
   } else {
     error7.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
@@ -114,12 +139,15 @@ function descobrir() {
   if (seletor8 == "1") {
     answerA++;
     validador++;
+    error8.innerHTML = ``;
   } else if (seletor8 == "2") {
     answerB++;
     validador++;
+    error8.innerHTML = ``;
   } else if (seletor8 == "3") {
     answerC++;
     validador++;
+    error8.innerHTML = ``;
   } else {
     error8.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
@@ -127,12 +155,15 @@ function descobrir() {
   if (seletor9 == "1") {
     answerA++;
     validador++;
+    error9.innerHTML = ``;
   } else if (seletor9 == "2") {
     answerB++;
     validador++;
+    error9.innerHTML = ``;
   } else if (seletor9 == "3") {
     answerC++;
     validador++;
+    error9.innerHTML = ``;
   } else {
     error9.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }
@@ -140,12 +171,15 @@ function descobrir() {
   if (seletor10 == "1") {
     answerA++;
     validador++;
+    error10.innerHTML = ``;
   } else if (seletor10 == "2") {
     answerB++;
     validador++;
+    error10.innerHTML = ``;
   } else if (seletor10 == "3") {
     answerC++;
     validador++;
+    error10.innerHTML = ``;
   } else {
     error10.innerHTML = `<i style="color:red">*Não deixe de preencher este campo!</i>`;
   }

@@ -51,7 +51,7 @@ header img {
 
 /*Inicio SHOWROOM*/
 .showroom {
-    background-image: url(img/login33.png);
+    background-image: url(../img/login33.png);
     background-size: cover;
     min-height: 500px;
 }
@@ -113,3 +113,24 @@ header img {
 
 
 /*Fim SHOWROOM*/
+
+/* EXTRA */
+
+.extra {
+    padding-top: 60px;
+    margin: 10px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.extra img {
+  height: 50px;
+   visibility: hidden;
+}
+
+.extra .msg_erro {
+    background-color:  #e7b9c4; 
+    color: black; 
+    visibility: hidden;
+}
