@@ -30,46 +30,53 @@
         <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
             <div class="inputs">
                 <p>
-                    <p>Nome completo:</p>
-                    <input class="importante" type="text" id="nome"  required placeholder="Ex: fulano ciclano"> <!--DEVE TER AO MENOS 1 ESPAÇO, NAO PODE SER NO COMEÇO OU FINAL-->
+                    <p>Nome completo: </p>
+
+                    <input onkeyup="verificarNome()" class="importante" type="text" id="nome" required
+                        placeholder="Ex: fulano ciclano"><img src="" id="checador" alt="" style="width: 20px;">
+                    <!--DEVE TER AO MENOS 1 ESPAÇO, NAO PODE SER NO COMEÇO OU FINAL-->
                 </p>
 
                 <p>
                     <p>E-mail:</p>
-                    <input class="importante" type="email" id="email" required placeholder="Ex: nome@dominio.com"><!--DEVE CONTER AO MENOS 1 @, 1. E NAO PODE COMEÇAR COM ESPAÇO-->
+                    <input class="importante" type="email" id="email" required placeholder="Ex: nome@dominio.com">
+                    <!--DEVE CONTER AO MENOS 1 @, 1. E NAO PODE COMEÇAR COM ESPAÇO-->
                 </p>
                 <p>Senha:</p>
-                <input type="password" placeholder="**********" id="senha" minlength="8"><!--NAO PODE COMEÇAR COM ESPAÇO-->
-                
-               
+                <input type="password" placeholder="**********" id="senha" minlength="8">
+                <!--NAO PODE COMEÇAR COM ESPAÇO-->
 
-               
-                <p>CPF:</p>
-                <input type="text" id="CPF" required minlength="11" placeholder="Ex: XXX.XXX.XXX-XX"><!--ao menos 2 pontos e 1 tracinho-->
-                
-               
-                
-              
-                    <p>Telefone/Celular:</p>
-                    <input type="text" id="Celuar" required>
-                
+
+
+
+                <p>*CPF:</p>
+                <input type="text" id="CPF" minlength="11" placeholder="Ex: XXX.XXX.XXX-XX">
+                <!--ao menos 2 pontos e 1 tracinho-->
+
+
+
+
+                <p>*Telefone/Celular:</p>
+                <input type="text" id="Celuar" >
+
                 <p>Data de nascimento:
-                    
-                </p>
-                <input type="date" id="data" placeholder="Data de nascimento" required min="19/04/1999" max="20/03/2020">
 
-              
+                </p>
+                <input type="date" id="data" placeholder="Data de nascimento" required min="19/04/1999"
+                    max="20/03/2020">
+
+
             </div>
 
             <div class="desejavel">
                 <input class="button" type="submit" id="btn_entrar" value="Cadastrar" class="btn">
-                
+
             </div>
 
 
         </form>
         <img src="../img/carregando.gif" id="img_aguarde" style="display: none;" width="100px">
-    
+
         <div id="div_erro" style="background-color: black; color: yellow; display: none;">
             Erro no cadastro
         </div>
@@ -77,14 +84,13 @@
     </div>
     <!--Fim Form-->
 
-    
+
 </body>
 
 </html>
 
 
 <script>
-
     function cadastrar() {
         aguardar();
         var formulario = new URLSearchParams(new FormData(form_cadastro));
@@ -92,10 +98,10 @@
             method: "POST",
             body: formulario
         }).then(function (response) {
-            
+
             if (response.ok) {
 
-                window.location.href='login.html';
+                window.location.href = 'login.html';
 
             } else {
 
@@ -112,14 +118,25 @@
 
     function aguardar() {
         btn_entrar.disabled = true;
-        img_aguarde.style.display='block';
-        div_erro.style.display='none';
+        img_aguarde.style.display = 'block';
+        div_erro.style.display = 'none';
     }
 
     function finalizar_aguardar() {
         btn_entrar.disabled = false;
-        img_aguarde.style.display='none';
-        div_erro.style.display='block';
+        img_aguarde.style.display = 'none';
+        div_erro.style.display = 'block';
     }
 
+    function verificarNome() {
+        let nomeDigitado = nome.value;
+
+        if (nomeDigitado.startsWith(" ") || nomeDigitado.endsWith(" ")) {
+            checador.src = `img/x.png`;
+            checador.style.display = `block`;
+        } else {
+            checador.src = `img/check.png`;
+            checador.style.display = `block`;
+        }
+    }
 </script>

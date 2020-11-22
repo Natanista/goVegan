@@ -117,11 +117,15 @@ input:focus {
 }
 
 #combo{
-    margin-top:10px;
-    background-color: black;
     color: #ffc709;
     padding: 10px;
     font-size:15px;
+}
+
+#checador{
+    position: relative;
+    left: 630px;
+    bottom: 30px;
 }
 
 /*Fim Form*/
