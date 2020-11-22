@@ -1,3 +1,9 @@
+let usuario;
+
+verificar_autenticacao();
+
+
+
 function descobrir() {
   //atribuindo a variavel "seletor" os elemntos com id "seletor";
   let seletor1 = document.getElementById("seletor1").value;
@@ -220,3 +226,8 @@ function descobrir() {
     }
   }
 }
+
+
+
+
+

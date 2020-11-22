@@ -90,7 +90,7 @@ header img {
 
 }
 
-.desejavel button {
+.button {
     background-color: #FFC709;
     border: none;
     padding: 20px;
@@ -99,7 +99,7 @@ header img {
     margin-top: 30px;
 }
 
-.desejavel button:hover {
+.button:hover {
     background-color: #FFDB66;
 }
 

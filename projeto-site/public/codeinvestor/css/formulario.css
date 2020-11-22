@@ -36,9 +36,23 @@ header a {
 header img {
     width: 40px;
     float: left;
+}
 
+nav{
+    float: right;  
+    padding: 30px;  
+    margin-right: 300px;
+}
 
+nav ul{
+    list-style: none;
 
+}
+
+nav li{
+    color: yellow;
+    font-weight: bold;
+    display: inline-block;
 }
 
 .title a {
