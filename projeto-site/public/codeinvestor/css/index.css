@@ -168,6 +168,44 @@ header li {
 
 /*Fim Perfil*/
 
+/*Inicio valores*/
+.amarelo{
+    border-bottom: yellow;
+}
+
+.bloquinho-valores img{
+    width: 400px;
+    padding-left: 100px;
+}
+
+.bloquinho-valores{
+    display: inline-block;
+}
+
+.bloquinho-valores p{
+    font-size: 25px;
+    font-weight: bold;
+    width: 700px;
+    margin-left: 800px;
+    position: relative;
+    bottom: 400px;
+}
+
+#proposito{
+    position: relative;
+    left: 1200px;
+}
+
+#proposito-texto{
+    position: relative;
+    right: 400px;
+}
+
+.valores{
+    padding-top:50px
+}
+/*Fim valores*/
+
 /*Inicio Footer*/
 footer {
     height: 150px;
