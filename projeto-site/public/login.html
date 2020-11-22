@@ -1,116 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proj. Individual | Meu nome aqui</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contato-e-login.css">
-    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="img/icon2.png">
+    <title>codeInvestor | Login</title>
 </head>
 
 <body>
-    <!--header inicio-->
-    <div class="header">
+    <header>
         <div class="container">
-            <h1 class="titulo">meu <span class="highlight">projeto</span> individual</h1>
-            <div class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="meu_cadastro.html">Cadastro</a></li>
-                    <li><a href="" class="current">Login</a></li>
-                </ul>
-            </div>
+            <a href="index.html">
+                <h3>codeInvestor</h3>
+                <img class="imgm" src="img/icon2.png" alt="logo codeInvestor">
+            </a>
         </div>
-    </div>
-    <!--header fim-->
 
-    <div class="pag-login">
-        <div class="container">
-            <div class="box-login">
-                <h1>Login</h1>
+    </header>
+    <!--Fim Header-->
+    <!--Inicio SHOWROOM-->
+    <div class="showroom">
+        <div class="container2">
+            <form id="form_login" method="post" onsubmit="return entrar()">
+                <div class="data">
+                    <h2>LOGIN:</h2>
+                    <input autofocus="autofocous" type="text" name="login" id="login" required>
+                    <h2>SENHA:</h2>
+                    <input type="password" id="senha" name="senha" required>
+                    <p><button id="btn_entrar" onclick="entrar()">ENTRAR</button></p>
+                    <p>Ainda não tem cadastro? <a href="cadastro.html">Clique Aqui!</a></p>
+                    <div class="extra">
+                        <div id="div_erro" class="msg_erro">
+                        </div>
 
+                        <img src="img/carregando.gif" id="img_aguarde">
 
-
-                <form id="form_login" method="post" onsubmit="return entrar()">
-                    Usuário:
-                    <input type="text" class="input-padrao" name="login">
-                    <br>
-                    Senha:
-                    <input type="password" class="input-padrao" name="senha">
-                    <br>
-                    <button id="btn_entrar" class="btn">Entrar</button>
-                </form>
-
-                <div class="extra">
-                    <div id="div_erro" class="msg_erro">
                     </div>
-
-                    <img src="img/carregando.gif" id="img_aguarde"  >
-                    
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 
-    <!--footer inicio-->
-    <div class="footer">
-        <div class="container">
-            <h4>Feito com <i class="far fa-heart"></i> por um aluno BandTec &COPY; 2020</h4>
-        </div>
-    </div>
-    <!--footer fim-->
+    <!--Fim SHOWROOM-->
+    <script>
+        function entrar() {
+            aguardar();
+            var formulario = new URLSearchParams(new FormData(form_login));
+            fetch("/usuarios/autenticar", {
+                method: "POST",
+                body: formulario
+            }).then(resposta => {
+
+                if (resposta.ok) {
+
+                    resposta.json().then(json => {
+
+                        sessionStorage.login_usuario_meuapp = json.login;
+                        sessionStorage.nome_usuario_meuapp = json.nome;
+
+                        window.location.href = 'formulario.html';
+                    });
+
+                } else {
+
+                    console.log('Erro de login!');
+
+                    resposta.text().then(texto => {
+                        console.error(texto);
+                        finalizar_aguardar(texto);
+                    });
+                }
+            });
+
+            return false;
+        }
+
+        function aguardar() {
+            btn_entrar.disabled = true;
+            img_aguarde.style.visibility = 'visible';
+            div_erro.style.visibility = 'hidden';
+        }
+
+        function finalizar_aguardar(resposta) {
+            btn_entrar.disabled = false;
+            img_aguarde.style.visibility = 'hidden';
+            div_erro.style.visibility = 'visible';
+            div_erro.innerHTML = resposta;
+        }
+    </script>
+
 
 </body>
 
 </html>
-<script>
-
-    function entrar() {
-        aguardar();
-        var formulario = new URLSearchParams(new FormData(form_login));
-        fetch("/usuarios/autenticar", {
-            method: "POST",
-            body: formulario
-        }).then(resposta => {
-
-            if (resposta.ok) {
-
-                resposta.json().then(json => {
-
-                    sessionStorage.login_usuario_meuapp = json.login;
-                    sessionStorage.nome_usuario_meuapp = json.nome;
-
-                    window.location.href = 'sobre.html';
-                });
-
-            } else {
-
-                console.log('Erro de login!');
-
-                resposta.text().then(texto => {
-                    console.error(texto);
-                    finalizar_aguardar(texto);
-                });
-            }
-        });
-
-        return false;
-    }
-
-    function aguardar() {
-        btn_entrar.disabled = true;
-        img_aguarde.style.visibility = 'visible';
-        div_erro.style.visibility = 'hidden';
-    }
-
-    function finalizar_aguardar(resposta) {
-        btn_entrar.disabled = false;
-        img_aguarde.style.visibility = 'hidden';
-        div_erro.style.visibility = 'visible';
-        div_erro.innerHTML = resposta;
-    }
-
-</script>
