@@ -1,4 +1,4 @@
-//oq vamos fazer com essa tabela
+
 
 var express = require('express');
 var router = express.Router();

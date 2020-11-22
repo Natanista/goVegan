@@ -1,3 +1,9 @@
+let usuario;
+    
+verificar_autenticacao();
+
+
+
 //função para mostrar os livros de acordo com o perfil
 combo.value = "0";
 
