@@ -34,7 +34,7 @@ function finalizar_aguardar() {
 function verificarNome() {
   let nomeDigitado = nome.value;
 
-  if (nomeDigitado.startsWith(" ") || nomeDigitado.endsWith(" ")) {
+  if (nomeDigitado.startsWith(" ") || nomeDigitado.endsWith(" ") || nomeDigitado == 0 || nomeDigitado.length >= 46) {
     checador.src = `img/x.png`;
     checador.style.display = `block`;
   } else {
@@ -87,5 +87,18 @@ function validadorCPF() {
   } else {
     checadorCPF.src = `img/check.png`;
     checadorCPF.style.display = `block`;
+  }
+}
+
+
+function verificarUsuario(){
+  let nomeDigitado = usuario.value;
+
+  if (nomeDigitado.startsWith(" ") || nomeDigitado.endsWith(" ") || nomeDigitado.length == 0 || nomeDigitado.length >= 46) {
+    checkUser.src = `img/x.png`;
+    checkUser.style.display = `block`;
+  } else {
+    checkUser.src = `img/check.png`;
+    checkUser.style.display = `block`;
   }
 }

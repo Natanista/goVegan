@@ -40,9 +40,9 @@
 
                 <p>Usuario: </p>
 
-                    <input onkeyup="verificarNome()" name="login" class="importante" type="text" id="nome" required
-                        placeholder="Ex: fulano ciclano"><img src="" id="checador" alt="" style="width: 20px;">
-                    <!--DEVE TER AO MENOS 1 ESPAÇO, NAO PODE SER NO COMEÇO OU FINAL-->
+                <input onkeyup="verificarUsuario()" name="login" class="importante" type="text" id="usuario" required
+                    placeholder="Ex: fulan123"><img src="" id="checkUser" alt="" style="width: 20px;">
+                <!--DEVE TER AO MENOS 1 ESPAÇO, NAO PODE SER NO COMEÇO OU FINAL-->
                 </p>
 
                 <p>
@@ -52,7 +52,8 @@
                     <!--DEVE CONTER AO MENOS 1 @, 1. E NAO PODE COMEÇAR COM ESPAÇO-->
                 </p>
                 <p>Senha:
-                    <input type="password" name="senha" onkeyup="validadorSenha()" placeholder="**********" id="senha" minlength="8">
+                    <input type="password" name="senha" onkeyup="validadorSenha()" placeholder="**********" id="senha"
+                        minlength="8">
                 </p><img src="" id="checadorSenha" alt="" style="width: 20px;">
                 <div id="feedback"></div>
                 <!--NAO PODE COMEÇAR COM ESPAÇO-->
@@ -61,7 +62,8 @@
 
 
                 <p>*CPF:</p>
-                <input type="number" id="CPF" onkeyup="validadorCPF()" placeholder="Ex: XXX.XXX.XXX-XX"><img src="" id="checadorCPF" alt="" style="width: 20px;">
+                <input type="number" id="CPF" onkeyup="validadorCPF()" placeholder="Ex: XXX.XXX.XXX-XX"><img src=""
+                    id="checadorCPF" alt="" style="width: 20px;">
                 <!--ao menos 2 pontos e 1 tracinho-->
 
 
@@ -98,5 +100,3 @@
 </body>
 
 </html>
-
-

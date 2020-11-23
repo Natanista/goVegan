@@ -35,9 +35,6 @@ header a {
 header img {
     width: 40px;
     float: left;
-
-
-
 }
 
 .title a {
@@ -151,7 +148,12 @@ input:focus {
     position: relative;
     left:250px;
     bottom: 40px;
+}
 
+#checkUser {
+    position:relative;
+    left: 630px;
+    bottom:30px;
 }
 
 
