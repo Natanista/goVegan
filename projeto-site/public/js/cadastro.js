@@ -92,7 +92,7 @@ function validadorCPF() {
 
 
 function verificarUsuario(){
-  let nomeDigitado = usuario.value;
+  let nomeDigitado = login.value;
 
   if (nomeDigitado.startsWith(" ") || nomeDigitado.endsWith(" ") || nomeDigitado.length == 0 || nomeDigitado.length >= 46) {
     checkUser.src = `img/x.png`;

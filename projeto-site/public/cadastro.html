@@ -40,14 +40,14 @@
 
                 <p>Usuario: </p>
 
-                <input onkeyup="verificarUsuario()" name="login" class="importante" type="text" id="usuario" required
+                <input onkeyup="verificarUsuario()" name="login" class="importante" type="text" id="login" required
                     placeholder="Ex: fulan123"><img src="" id="checkUser" alt="" style="width: 20px;">
                 <!--DEVE TER AO MENOS 1 ESPAÇO, NAO PODE SER NO COMEÇO OU FINAL-->
                 </p>
 
                 <p>
                     <p>E-mail:</p>
-                    <input onkeyup="validacaoEmail()" class="importante" type="email" id="email" required
+                    <input name="email" onkeyup="validacaoEmail()" class="importante" type="email" id="email" required
                         placeholder="Ex: nome@dominio.com"><img src="" id="checadorEmail" alt="" style="width: 20px;">
                     <!--DEVE CONTER AO MENOS 1 @, 1. E NAO PODE COMEÇAR COM ESPAÇO-->
                 </p>
@@ -62,7 +62,7 @@
 
 
                 <p>*CPF:</p>
-                <input type="number" id="CPF" onkeyup="validadorCPF()" placeholder="Ex: XXX.XXX.XXX-XX"><img src=""
+                <input type="number" name="cpf" id="CPF" onkeyup="validadorCPF()" placeholder="Ex: XXX.XXX.XXX-XX"><img src=""
                     id="checadorCPF" alt="" style="width: 20px;">
                 <!--ao menos 2 pontos e 1 tracinho-->
 
@@ -70,14 +70,7 @@
 
 
                 <p>*Telefone/Celular:</p>
-                <input type="number" id="Celuar">
-
-                <p>Data de nascimento:
-
-                </p>
-                <input type="date" id="data" placeholder="Data de nascimento" required min="19/04/1999"
-                    max="20/03/2020">
-
+                <input name="telefone" type="number" id="Celuar">
 
             </div>
 

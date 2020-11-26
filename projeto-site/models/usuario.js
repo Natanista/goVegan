@@ -24,14 +24,31 @@ module.exports = (sequelize, DataTypes) => {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
+		email: {
+			field: 'email',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
 		senha: {
 			field: 'senha',
 			type: DataTypes.STRING,
 			allowNull: false
-		}
+		},
+		cpf: {
+			field: 'cpf',
+			type: DataTypes.CHAR,
+			allowNull: false
+		},
+		telefone: {
+			field: 'telefone',
+			type: DataTypes.CHAR,
+			allowNull: false
+		},
+		
+
 	}, 
 	{
-		tableName: 'usuario', 
+		tableName: 'usuario2', 
 		freezeTableName: true, 
 		underscored: true,
 		timestamps: false,
