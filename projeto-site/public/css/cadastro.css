@@ -156,5 +156,11 @@ input:focus {
     bottom:30px;
 }
 
+#checadorCelular{
+    position: relative;
+    left: 250px;
+    bottom: 40px;
+}
+
 
 /*Fim Form*/

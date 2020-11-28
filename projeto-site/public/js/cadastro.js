@@ -102,3 +102,14 @@ function verificarUsuario(){
     checkUser.style.display = `block`;
   }
 }
+
+function validarCelular(){
+  let telefoneUser = celular.value;
+  if(telefoneUser.length < 11){
+    checadorCelular.src = `img/x.png`;
+    checadorCelular.style.display = `block`;
+  }else{
+    checadorCelular.src = `img/check.png`;
+    checadorCelular.style.display = `block`;
+  }
+}

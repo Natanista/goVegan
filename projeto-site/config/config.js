@@ -1,6 +1,6 @@
 module.exports = {
   production: {
-    username: '',
+    username: 'admin01202056',
     password: '',
     database: 'usuarios',
     host: 'usuariosbanco.database.windows.net',
