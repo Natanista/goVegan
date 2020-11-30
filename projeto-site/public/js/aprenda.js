@@ -35,7 +35,7 @@ function mostrar() {
 
 let i = 0;
 let txt = "Qual o seu perfil de investidor?"; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+var speed = 50; //velocidade em milisegundos
 
 function typeWriter() {
   if (i < txt.length) {

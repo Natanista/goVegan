@@ -56,21 +56,21 @@ function validacaoEmail() {
 
 function validadorSenha() {
   feedback.innerHTML = ``;
-  let y = senha.value;
+  let password = senha.value;
   var error = false;
   var message = "";
-  if (y.length < 8) {
+  if (password.length < 8) {
     feedback.innerHTML += "<br>Sua senha precisa de no mínimo 8 caracteres.";
     error = true;
-  } else if (y.search(/[a-z]/) == -1) {
+  } else if (password.search(/[a-z]/) == -1) {
     feedback.innerHTML +=
       "<br>Sua senha precisa conter ao menos uma letra minúscula.";
     error = true;
-  } else if (y.search(/[A-Z]/) == -1) {
+  } else if (password.search(/[A-Z]/) == -1) {
     feedback.innerHTML +=
       "<br>Sua senha precisa conter ao menos uma letra maiúscula.";
     error = true;
-  } else if (y.search(/[0-9]/) == -1) {
+  } else if (password.search(/[0-9]/) == -1) {
     feedback.innerHTML += "<br>Sua senha precisa conter um número.";
     error = true;
   } else {
